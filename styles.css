@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+header {
+  background: linear-gradient(to right, #6fbf73, #2c6e49);
+  color: white;
+  padding: 20px 0;
+}
+header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+header h1 span {
+  display: block;
+  font-size: 1.5rem;
+  color: #d1fae5;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  margin-top: 15px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+nav ul li a:hover {
+  color: #a7f3d0;
+}
+#hero {
+  background-image: url('https://source.unsplash.com/1600x600/?nature,city');
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#hero .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+section h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #2c6e49;
+}
+.atividades-lista {
+  list-style: circle;
+  padding-left: 20px;
+  color: #444;
+}
+.galeria {
+  background-color: #e6f2ec;
+  padding: 40px 20px;
+}
+.galeria .fotos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.galeria img {
+  width: 100%;
+  border-radius: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+form button {
+  padding: 10px;
+  background-color: #2c6e49;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+form button:hover {
+  background-color: #1e4a32;
+}
+footer {
+  background-color: #2c6e49;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
